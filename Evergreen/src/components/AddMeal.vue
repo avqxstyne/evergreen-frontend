@@ -29,7 +29,7 @@ export default {
               method: "POST",
               headers: {
                 "Accept": "application/json",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
               },
               body: JSON.stringify({
                 "name": name,
@@ -90,16 +90,16 @@ export default {
  
 </template>
 
-<style scoped>
+<style>
 
 #balls {
-  border-bottom: 2px solid grey;
-  border-right: 2px solid grey;
+  background-color: rgb(33, 47, 33);
   width: 50%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border-radius: 1rem;
 
 }
 #balls-button {
@@ -147,6 +147,8 @@ export default {
 
   outline: none;
 }
+
+
 
 
 </style>
